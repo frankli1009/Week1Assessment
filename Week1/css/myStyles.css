@@ -1,0 +1,202 @@
+/*---------------------------------------------------------------------
+            FDG FORENSICS WEBSITE CSS STYLE FILE
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+                        WEBSITE COLOUR SCHEME
+---------------------------------------------------------------------*/
+
+/*First colour: rgba(195, 168, 255, 1);
+Secondary colour: rgba(44, 31, 61, 1); 
+Third colour: rgba(55, 42, 71, 1); - variations of opacity to the main colour
+Fourth colour: #444; for main content text and headings*/
+
+
+/*---------------------------------------------------------------------
+                        MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box model layout to all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix: Force an element not to collapse */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* All images and video set to 100% width of their parent container */
+/*
+img, video {
+    width: 100%;
+}
+*/
+
+body {
+    
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*-------------------------------------*/
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+
+/*---------------------------------------------------------------------
+                        THE HOME STYLES
+---------------------------------------------------------------------*/
+
+.homeBgImage {
+    position: relative;
+    background-image: url(../img/background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
+}
+
+.logoC {
+    top: 10px;
+    left: 3px;
+    position: fixed;
+}
+
+.searchC {
+    padding: 3px 10vw 0 40vw;
+    position: fixed;
+    width: 550px;
+    column-count: 2;
+}
+
+
+.searchHintC {
+    width: 20px;
+    line-height: 0.7;
+    font-size: 0.5em;
+}
+
+.searchFormC {
+    display: inline;
+    padding: 3vw auto auto;
+    vertical-align: middle;
+}
+
+.inputText {
+    size: 10;
+    width: 100px;
+}
+
+.secondHeading {
+    padding: 80px 3px 3px 3px;
+}
+
+.slogan {
+    font-family: '28_days';
+    letter-spacing: 3px;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: right;
+    padding: 150px 4vw 0 0;
+    color: rgb(205, 205, 205);
+    width: 800px;
+    float:left;
+
+ }
+
+.navDivC {
+    
+}
+
+.navC {
+    background-color: rgba(44, 31, 61, 0.95);
+    border-bottom: none;
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav a {
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+}
+nav a:hover {
+    color: rgba(194, 166, 255, 1)
+}
+
+.menu-items a {
+    padding: 0 20px;
+    margin: 0 5px;
+    text-align: center;
+    width: 10%;
+    display: inline;
+}
+
+.menu-items li {
+    border-top: none; 
+/*    display: inline;*/
+}
+
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 568 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 568px) {
+	.allTrainers {
+        column-count: 1;
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+	.allTrainers {
+        column-count: 3;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+}
