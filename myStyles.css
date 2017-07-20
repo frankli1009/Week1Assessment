@@ -37,11 +37,11 @@ html {
 }
 
 /* All images and video set to 100% width of their parent container */
-/*
+
 img, video {
     width: 100%;
 }
-*/
+
 
 body {
     
@@ -68,13 +68,15 @@ body {
 ---------------------------------------------------------------------*/
 
 .homeBgImage {
-    position: relative;
+    position: fixed;
+    top: 50px;
+    left: 0;
     background-image: url(../img/background.jpg); 
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
     width: 100%;
-    height: auto;
+    height: 195px;
     border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
 }
 
@@ -94,6 +96,7 @@ body {
     width:200px;
     column-count: 2;
     column-gap: 0;
+    display: none;
 }
 
 
@@ -114,10 +117,6 @@ body {
     width: 100px;
 }
 
-.secondHeading {
-    padding: 80px 3px 3px 3px;
-}
-
 .slogan {
     font-family: '28_days';
     letter-spacing: 3px;
@@ -132,18 +131,28 @@ body {
  }
 
 .navDivC {
+    top: 50px;
+    left: 0;
+    width: 300px;
+    height: 195px;
+    color: white;
+    background-color: rgba(44, 31, 61, 1);
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 0.2);
+    z-index: 100;
     
 }
 
 .navBtn {
     font-size: 2.5em;
+    color: Gray;
     position: fixed;
-    width: 45px;
-    margin: 0 4vw 0 73vw;
-    padding: 7px 3%;
+    width: auto;
+    margin: 0 4vw 0 83vw;
+    padding:1px 3%;
     text-align: center;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 nav a {
@@ -159,7 +168,7 @@ nav a:hover {
 }
 
 .menu-items a {
-    padding: 0 20px;
+    padding: 0 5px;
     margin: 0 5px;
     text-align: center;
     width: 10%;
@@ -168,12 +177,36 @@ nav a:hover {
 
 .menu-items li {
     border-top: none; 
+    list-style-type: none;
 /*    display: inline;*/
 }
 
 .detail {
-    margin: 100px 3px 10px 3px;
+    margin: 250px 3px 10px 3px;
+    height: auto;
+    clear: left;
+    
+} 
+
+.detail > article {
+    
+    clear: left;
 }
+
+.introContent {
+    width: 600px;
+    float: left;
+}
+
+.introAside {
+    float: left;
+/*    width: 400px;*/
+}
+
+.footer {
+    clear: left;
+}
+
 
 
 /*---------------------------------------------------------------------
@@ -181,9 +214,22 @@ nav a:hover {
 ---------------------------------------------------------------------*/
 
 
-@media screen and (min-width: 568px) {
-	.allTrainers {
+@media screen and (min-width: 240px) {
+	.detail {
         column-count: 1;
+    }
+    .footer>div {
+        column-count: 1;
+    }
+    .navBtn {
+        display: block;
+    }
+    .searchC, .navDivC {
+        display: none;
+    }
+    .homeBgImage {
+        left: 0;
+        position: static;
     }
 }
 
@@ -198,8 +244,21 @@ nav a:hover {
 
 
 @media screen and (min-width: 768px) {
-	.allTrainers {
+	.detail {
         column-count: 3;
+    }
+    .footer>div {
+        column-count: 2;
+    }
+    .navBtn {
+        display: none;
+    }
+    .searchC, .navDivC {
+        display: block;
+    }
+    .homeBgImage {
+        left: 300px;
+        position: fixed;
     }
 }
 
