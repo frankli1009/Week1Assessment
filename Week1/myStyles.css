@@ -1,0 +1,454 @@
+/*---------------------------------------------------------------------
+            FDG FORENSICS WEBSITE CSS STYLE FILE
+---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+                        WEBSITE COLOUR SCHEME
+---------------------------------------------------------------------*/
+
+/*First colour: rgba(184, 210, 238, 1); - introduction
+Secondary colour: rgba(13, 59, 82, 1);  - header
+Third colour: rgba(51, 51, 51, 1); - footer
+Fourth colour: rgba(51, 137, 204, 1) - menu underline
+*/
+
+
+/*---------------------------------------------------------------------
+                        MOBILE DEFAULT STYLES - GLOBAL STYLES
+---------------------------------------------------------------------*/
+
+/* Prevents adjustments of font size after orientation change in IE on Windows phone and in IOS */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box model layout to all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* clearfix: Force an element not to collapse */
+.clearfix: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* All images and video set to 100% width of their parent container */
+
+img, video {
+    width: 100%;
+}
+
+
+body {
+    
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*-------------------------------------*/
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 100px auto;
+}
+
+
+/*---------------------------------------------------------------------
+                        THE HOME STYLES
+---------------------------------------------------------------------*/
+
+.navDivC, .searchC, .sloganLineC {
+    display: none;
+}
+
+.logLineC {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 70;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.logoC {
+    top: 10px;
+    left: 3px;
+    width: 120px;
+    position: fixed;
+    z-index: 100;
+}
+
+.searchC {
+    top: 10px;
+    left: 45vw;
+    position: fixed;
+    z-index: 90;
+    width:200px;
+    column-count: 2;
+    column-gap: 0;
+    display: none;
+}
+
+
+.searchHintC {
+    width: 50px;
+    font-size: 0.7em;
+    margin: 5px;
+    padding: 0;
+}
+
+.searchFormC {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.inputText {
+    size: 10;
+    width: 100px;
+}
+
+.navBtn {
+    font-size: 1.5em;
+    color: brown;
+    position: fixed;
+    width: auto;
+    margin: 10px 4vw 0 83vw;
+    padding: 5px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 110;
+}
+
+.header {
+    background-color: rgba(13, 59, 82, 1);
+}
+
+.sloganLineC {
+    margin: 0;
+    width: 100%;
+    height: 195px;
+    top: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 70;
+    background-color: rgba(13, 59, 82, 1);
+    
+}
+
+.slogan {
+    font-family: 'Impact';
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-align: right;
+    color: rgb(205, 205, 205);
+    
+    top: 50px;
+    margin-right: 0;
+    height: 195px;
+/*
+    left: 300px;
+    width: 100%;
+    position: fixed;
+*/
+    left: 0;
+    position: static;
+    width: 100%;
+    z-index: 80;
+    padding: 150px 4vw 0 0;
+
+    background-image: url(../img/background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-color: rgba(13, 59, 82, 1);
+    border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
+ }
+
+
+.navDivC {
+    top: 50px;
+    left: 0;
+    width: 300px;
+    height: 195px;
+    color: white;
+    position: fixed;
+    border-bottom: 2px solid rgba(194, 166, 255, 0.2);
+    z-index: 100;
+    background-color: rgba(13, 59, 82, 1);
+}
+
+
+nav a {
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+}
+nav a:hover {
+    color: rgba(194, 166, 255, 1)
+}
+
+.menu-items a {
+    padding: 0 5px;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+/*
+    width: 10%;
+    display: inline;
+*/
+}
+
+.menu-items li {
+    border-top: none; 
+    border-bottom: 2px solid rgba(51, 137, 204, 1);
+    list-style-type: none;
+/*    display: inline;*/
+}
+
+/*
+.menu-items li:after {
+    content: "\2605";
+}
+*/
+
+.detail {
+    margin: 250px 0 0 0;
+    max-height: 300px;
+    height: auto;
+/*    column-count: 3;*/
+} 
+
+.detArticle {
+    position: relative;
+    height: 290px;
+    display: inline-block;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    opacity: 1;
+    transform: translateX(40);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.detailA {
+    line-height: normal;
+    color: rgba(102,153,188,1);
+    font-weight: bold;
+    font-family: "Verdana";
+    font-size: 0.7em;
+}
+
+.commonP {
+    line-height: normal;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+div.more {
+    text-align: right;
+}
+
+.contact {
+    font-weight: bold;
+    font-family: "Verdana";
+    font-size: 0.7em;
+    color: rgba(13, 59, 82, 1);
+}
+
+aside h3 {
+    color: white;
+    text-align: left;
+}
+
+.rotH3 {
+    background-color: rgba(13, 59, 82, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    font-size: 0.9em;
+/*
+    margin-left: -300px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+*/
+}
+
+.introduction {
+    height: 200px;
+    background-color: rgba(184, 210, 238, 1);
+    width: 100%;
+    clear: both;
+}
+
+.introContent {
+    margin: 3px 3px auto auto;
+    width: 69%;
+    float: left;
+}
+
+.introAside {
+    width: 25%;
+    float: left;
+}
+
+.footer {
+    margin: 0;
+    padding: 10px 20px 0;
+    clear: left;
+    background-color: rgba(51, 51, 51, 1);
+}
+
+.footerDiv {
+    max-height: 240px;
+}
+
+.footerArticle {
+    position: relative;
+    height: 230px;
+    display: inline-flex;
+    margin: auto;
+    width: 100%;
+/*    text-align: center;*/
+    opacity: 1;
+    transform: translateX(40);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.whiteText {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footerUL {
+    width: 300px;
+}
+
+.footerUL li {
+    border-bottom: 2px solid rgba(109, 103, 54, 1);
+    list-style-type: none;
+    
+}
+
+#noUnderline {
+    border-bottom-style: none;
+}
+
+.footerUL a {
+    color: rgba(51, 121, 169, 1);
+    text-decoration: none;
+}
+
+.secIndent {
+    padding: 0 25px 5px;
+    margin: 0;
+}
+/*
+h1:before {
+    content: "Ha: ";
+    color: blue;
+}
+*/
+
+
+
+/*---------------------------------------------------------------------
+                 MOBILE STYLES - 568 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 568px) {
+	.detail {
+        column-count: 1;
+        margin: 0px 0 0 0;
+        height: auto;
+        max-height: none;
+    }
+    .footerDiv {
+        column-count: 1;
+        height: auto;
+        max-height: none;
+    }
+    .navBtn {
+        display: block;
+    }
+    .searchC, .navDivC, .sloganLineC {
+        display: none;
+    }
+    .slogan {
+        left: 0;
+        position: static;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+	.detail {
+        column-count: 3;
+        height: auto;
+        margin: 240px 0 0 0 !important;   
+        max-height: 300px;
+        
+    }
+    .myEmail {
+        font-size: 0.6em;
+    }
+    .footerDiv {
+        column-count: 3;
+        max-height: 240px;
+    }
+    .navBtn {
+        display: none;
+    }
+    .searchC, .navDivC, .sloganLineC {
+        display: block;
+    }
+    .slogan {
+        left: 300px;
+        position: fixed;
+        z-index: 80;
+        width: 70%
+    }
+
+}
+
+
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1024px) {
+}
