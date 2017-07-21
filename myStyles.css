@@ -6,10 +6,11 @@
                         WEBSITE COLOUR SCHEME
 ---------------------------------------------------------------------*/
 
-/*First colour: rgba(195, 168, 255, 1);
-Secondary colour: rgba(44, 31, 61, 1); 
-Third colour: rgba(55, 42, 71, 1); - variations of opacity to the main colour
-Fourth colour: #444; for main content text and headings*/
+/*First colour: rgba(184, 210, 238, 1); - introduction
+Secondary colour: rgba(13, 59, 82, 1);  - header
+Third colour: rgba(51, 51, 51, 1); - footer
+Fourth colour: rgba(51, 137, 204, 1) - menu underline
+*/
 
 
 /*---------------------------------------------------------------------
@@ -67,30 +68,32 @@ body {
                         THE HOME STYLES
 ---------------------------------------------------------------------*/
 
-.homeBgImage {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    background-image: url(../img/background.jpg); 
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: cover;
+.navDivC, .searchC, .sloganLineC {
+    display: none;
+}
+
+.logLineC {
+    margin: 0;
     width: 100%;
-    height: 195px;
-    border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 70;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .logoC {
     top: 10px;
     left: 3px;
-    width: 45px;
+    width: 120px;
     position: fixed;
     z-index: 100;
 }
 
 .searchC {
     top: 10px;
-    left: 45vw;
+    left: 70vw;
     position: fixed;
     z-index: 90;
     width:200px;
@@ -109,7 +112,7 @@ body {
 
 .searchFormC {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .inputText {
@@ -117,18 +120,65 @@ body {
     width: 100px;
 }
 
-.slogan {
-    font-family: '28_days';
-    letter-spacing: 3px;
+.navBtn {
     font-size: 1.5em;
+    color: brown;
+    position: fixed;
+    width: auto;
+    margin: 10px 4vw 0 83vw;
+    padding: 5px 3%;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 110;
+}
+
+.header {
+    background-color: rgba(13, 59, 82, 1);
+}
+
+.sloganLineC {
+    margin: 0;
+    width: 100%;
+    height: 195px;
+    top: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 70;
+    background-color: rgba(13, 59, 82, 1);
+    
+}
+
+.slogan {
+    font-family: 'Impact';
+    letter-spacing: 3px;
+    font-size: 1.1em;
     font-weight: lighter;
     text-align: right;
-    padding: 150px 4vw 0 0;
     color: rgb(205, 205, 205);
-    width: 800px;
-    float:left;
+    
+    top: 50px;
+    margin-right: 0;
+    height: 195px;
+/*
+    left: 300px;
+    width: 100%;
+    position: fixed;
+*/
+    left: 0;
+    position: static;
+    width: 100%;
+    z-index: 80;
+    padding: 150px 4vw 0 0;
 
+    background-image: url(../img/background.jpg); 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-color: rgba(13, 59, 82, 1);
+    border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
  }
+
 
 .navDivC {
     top: 50px;
@@ -136,24 +186,12 @@ body {
     width: 300px;
     height: 195px;
     color: white;
-    background-color: rgba(44, 31, 61, 1);
     position: fixed;
     border-bottom: 2px solid rgba(194, 166, 255, 0.2);
     z-index: 100;
-    
+    background-color: rgba(13, 59, 82, 1);
 }
 
-.navBtn {
-    font-size: 2.5em;
-    color: Gray;
-    position: fixed;
-    width: auto;
-    margin: 0 4vw 0 83vw;
-    padding:1px 3%;
-    text-align: center;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 nav a {
     font-size: 0.7em;
@@ -171,41 +209,179 @@ nav a:hover {
     padding: 0 5px;
     margin: 0 5px;
     text-align: center;
+    text-decoration: none;
+/*
     width: 10%;
     display: inline;
+*/
 }
 
 .menu-items li {
     border-top: none; 
+    border-bottom: 2px solid rgba(51, 137, 204, 1);
     list-style-type: none;
 /*    display: inline;*/
 }
 
+/*
+.menu-items li:after {
+    content: "\2605";
+}
+*/
+
 .detail {
-    margin: 250px 3px 10px 3px;
+    margin: 0;
+    padding-bottom:10px;
+    max-height: none;
     height: auto;
-    clear: left;
-    
+    clear: both;
+    display: block;
 } 
 
-.detail > article {
-    
-    clear: left;
+.detArticle {
+    position: relative;
+    display: inline-block;
+    margin: auto 25px;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    opacity: 1;
+}
+
+.detailA {
+    line-height: normal;
+    color: rgba(102,153,188,1);
+    font-weight: bold;
+    font-family: "Verdana";
+    font-size: 0.7em;
+}
+
+.commonP {
+    line-height: normal;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+div.more {
+    text-align: right;
+}
+
+.contact {
+    font-weight: bold;
+    font-family: "Verdana";
+    font-size: 0.7em;
+    color: rgba(13, 59, 82, 1);
+}
+
+div.address {
+    margin-top: 10px;
+}
+
+.myEmail {
+    font-size: 0.6em;
+}
+
+
+aside h3 {
+    color: white;
+    text-align: left;
+}
+
+.rotH3 {
+    background-color: rgba(13, 59, 82, 1);
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    font-size: 0.9em;
+/*
+    margin-left: -300px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+*/
+}
+
+.introduction {
+    padding-left: 25px;
+    height: 200px;
+    background-color: rgba(184, 210, 238, 1);
+    clear: both;
 }
 
 .introContent {
-    width: 600px;
+    width: 60%;
     float: left;
+    clear: left;
+}
+
+.introContent h3 {
+    font-size: 0.9em;
 }
 
 .introAside {
+    width: 30%;
     float: left;
-/*    width: 400px;*/
 }
 
 .footer {
+    margin: 0;
+    padding: 10px 20px 0;
     clear: left;
+    background-color: rgba(51, 51, 51, 1);
 }
+
+.footerDiv {
+    max-height: none;
+}
+
+.footerArticle {
+    position: relative;
+    height: auto;
+    display: inline-flex;
+    margin: auto;
+    width: 100%;
+    opacity: 1;
+/*
+    transform: translateX(40);
+    transition: all 0.5s ease-in-out;
+*/
+    
+}
+
+.whiteText {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footerUL {
+    width: 300px;
+}
+
+.footerUL li {
+    border-bottom: 2px solid rgba(109, 103, 54, 1);
+    list-style-type: none;
+    
+}
+
+#noUnderline {
+    border-bottom-style: none;
+}
+
+.footerUL a {
+    color: rgba(51, 121, 169, 1);
+    text-decoration: none;
+}
+
+.secIndent {
+    padding: 0 25px 5px;
+    margin: 0;
+}
+/*
+h1:before {
+    content: "Ha: ";
+    color: blue;
+}
+*/
 
 
 
@@ -214,22 +390,28 @@ nav a:hover {
 ---------------------------------------------------------------------*/
 
 
-@media screen and (min-width: 240px) {
+@media screen and (min-width: 568px) {
 	.detail {
         column-count: 1;
+        margin: 0;
+        height: auto;
+        max-height: none;
     }
-    .footer>div {
+    .footerDiv {
         column-count: 1;
+        height: auto;
+        max-height: none;
     }
     .navBtn {
         display: block;
     }
-    .searchC, .navDivC {
+    .searchC, .navDivC, .sloganLineC {
         display: none;
     }
-    .homeBgImage {
+    .slogan {
         left: 0;
         position: static;
+        width: 100%;
     }
 }
 
@@ -245,21 +427,29 @@ nav a:hover {
 
 @media screen and (min-width: 768px) {
 	.detail {
-        column-count: 3;
-    }
-    .footer>div {
         column-count: 2;
+        height: auto;
+        margin: 240px 0 0 0 !important;   
+        max-height: 600px;
+        
+    }
+    .footerDiv {
+        column-count: 2;
+        max-height: 500px;
     }
     .navBtn {
         display: none;
     }
-    .searchC, .navDivC {
+    .searchC, .navDivC, .sloganLineC {
         display: block;
     }
-    .homeBgImage {
+    .slogan {
         left: 300px;
         position: fixed;
+        z-index: 80;
+        width: 70%
     }
+
 }
 
 
@@ -271,4 +461,15 @@ nav a:hover {
 
 
 @media screen and (min-width: 1024px) {
+	.detail {
+        column-count: 3;
+        height: auto;
+        margin: 240px 0 0 0 !important;   
+        max-height: 300px;
+        
+    }
+    .footerDiv {
+        column-count: 3;
+        max-height: 240px;
+    }
 }

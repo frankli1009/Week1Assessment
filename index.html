@@ -6,7 +6,7 @@
     <!-- TELLS MOBILE PHONES NOT TO LIE ABOUT THEIR TRUE WIDTH -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!-- CSS RESET NORMALIZE -->
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/Normalizer.css" rel="stylesheet" type="text/css">
     <!-- MY OWN CSS -->
     <link href="css/myStyles.css" rel="stylesheet" type="text/css">
     
@@ -18,6 +18,7 @@
     <!-- Home Section ========================================= -->
     <section id="home" class="head section1">
         <header>
+        <div class="logLineC"></div>
         <div class="logoC">
             <img src="img/logo.png" />
         </div>
@@ -39,88 +40,91 @@
             <img src="img/background.jpg" />
         </div>
 -->
-        <!-- Navigation Section ================================== -->
-        <div class="navDivC">
-
-            <nav>
-                <ul class="menu-items">
-                    <li><a href="#">ABOUT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">AREA OF EXPERTISE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">PEOPLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">OFFICES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">ARTICLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">RECRUITMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                    <li><a href="#">CONTACT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</a></li>
-                </ul>
-            </nav>
+        <div class="header">
+            <!-- Navigation Section ================================== -->
+            <div id="mainMenu" class="navDivC">
+                <nav>
+                    <ul class="menu-items">
+                        <li><a href="#aboutDFG">ABOUT US</a></li>
+                        <li><a href="#areaOfWork">AREA OF EXPERTISE</a></li>
+                        <li><a href="#people">PEOPLE</a></li>
+                        <li><a href="#offices">OFFICES</a></li>
+                        <li><a href="#article">ARTICLE</a></li>
+                        <li><a href="#">RECRUITMENT</a></li>
+                        <li><a href="#contactUs">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End of Navigation ================================== -->
+            <div class="slogan">WE ARE FORENSIC INVESTIGATORS</div>
+            <div class="sloganLineC"></div>
         </div>
-        <!-- End of Navigation ================================== -->
-        <div class="slogan homeBgImage">WE ARE FORENSIC INVESTIGATORS</div>
-        
         
         </header>
     </section>
     <!-- Home Ends ================================== -->
     
     <!-- Detail Section ========================================= -->
-    <section class="detail section2">
-        <article>
-            <h1>
-                AREA OF EXPIERENCE
-            </h1>
-            <div>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-                <p>CHEMICAL ENGINEERING INVESTIGATION</p>
-            </div>
-        </article>
-        
-        <article>
-            <h1>
-                ARTICLE
-            </h1>
-            <div>
+    <section class="section2">
+        <div  class="detail">
+            <article class="detArticle">
+                <h3 class="rotH3">
+                    AREA OF EXPIERENCE
+                </h3>
                 <div>
-                    <h2>NEW OFFICE IN DUBAI</h2>
-                    <p>The UK's ...</p>
-                    <div><a href="#">[more]</a></div>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
+                    <p><a href="#" class="detailA">CHEMICAL ENGINEERING INVESTIGATION</a></p>
                 </div>
-                
+            </article>
+
+            <article id="article" class="detArticle">
+                <h3 class="rotH3">
+                    ARTICLE
+                </h3>
                 <div>
-                    <h2>NEW OFFICE IN DUBAI</h2>
-                    <p>The UK's ...</p>
-                    <div><a href="#">[more]</a></div>
+                    <div>
+                        <h4 class="detailA">NEW OFFICE IN DUBAI</h2>
+                        <p class="commonP">The UK's formost firm of forensic investigators, formost firm of forensic investigators...</p>
+                        <div class="more"><a href="#" class="detailA">[More]</a></div>
+                    </div>
+
+                    <div>
+                        <h4 class="detailA">NEW OFFICE IN DUBAI</h2>
+                        <p class="commonP">The UK's formost firm of forensic investigators, formost firm of forensic investigators...</p>
+                        <div class="more"><a href="#" class="detailA">[More]</a></div>
+                    </div>
                 </div>
-            </div>
-        </article>
-        
-        <article>
-            <h1>
-                QUICK CONTACT
-            </h1>
-            <div>
+            </article>
+
+            <article class="detArticle">
+                <h3 class="rotH3">
+                    QUICK CONTACT
+                </h3>
                 <div>
-                    CALL US TODAY ON:
-                    <a href="tel:02084883444"> 0208 488 3444</a>
-                    <i>img for phone</i>
+                    <div>
+                        <span class="contact">CALL US TODAY ON:</span><br />
+                        <a href="tel:02084883444"> 0208 488 3444</a>
+                        <i>img for phone</i>
+                    </div>
+                    <div class="address">
+                        <span class="contact">OR EMAIL US AT:</span><br />
+                        <a href="mailto:POSTMASTER@FDGFORENSIC.COM"><span class="myEmail"> POSTMASTER@FDGFORENSIC.COM</span></a>
+                        <i>img for email</i>
+                    </div>
+                    <div class="address">
+                        <span class="contact">URGENT INSTRUCTION SHOULD <br />BE GIVEN BY TELEPHONE:</span>
+                        <i>img for MSG</i>
+                    </div>
+                    <div class="address">
+                        <span class="contact"><address>LONDON OFFICE<br />2nd Floor<br />St. Clare House<br>30-33 Minories<br />London EC3N 1DD</address></span>
+                    </div>
                 </div>
-                <div>
-                    OR EMAIL US AT:
-                    <a href="mailto:POSTMASTER@FDGFORENSIC.COM"> POSTMASTER@FDGFORENSIC.COM</a>
-                    <i>img for email</i>
-                </div>
-                <div>
-                    URGENT INSTRUCTION SHOULD BE GIVEN BY TELEPHONE:
-                    <i>img for MSG</i>
-                </div>
-                <div>
-                    <address>LONDON OFFICE<br>2nd Floor<br>St. Clare House<br>30-33 Minories<br>London EC3N 1DD</address>
-                </div>
-            </div>
-        </article>
+            </article>
+        </div>
             
     </section>
     <!-- Detail Ends ================================== -->
@@ -132,14 +136,16 @@
     <!-- Introduction Section ========================================= -->
     <section class="introduction section3">
         <div>
+<!--            <h3 class="rotH3">SOCIAL MEDIA</h3>-->
             <div class="introContent">
-                <h1>WELCOME TO FDG FORENSIC INVESTIGATORS</h1>
-                <p>FDG Forensic is ...</p>
-                <p>We have offices throughout ... </p>
+                <h3>WELCOME TO FDG FORENSIC INVESTIGATORS</h3>
+                <p class="commonP">FDG Forensic is ...</p>
+                <p class="commonP">We have offices throughout ... </p>
             </div>
+            
             <aside class="introAside">
                 <div>
-                    <div>SOCIAL MEDIA</div>
+                    <h3 class="rotH3">SOCIAL MEDIA</h3>
                     <div>
                         <a href="#"><i>Linkedin</i></a><br />
                         <a href="#"><i>AppleStore</i></a><br />
@@ -155,58 +161,77 @@
     <!-- FOOTER ===================================================== -->
     <footer class="footer">
         <div>
-            <h1>SITEMAP</h1>
-            <div>
-                <article>
-                    <h4>Area of Work</h4>
-                    <ul>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
+            <h3 class="whiteText">SITEMAP</h3>
+            <div class="footerDiv">
+                <article id="areaOfWork" class="footerArticle">
+                <div>
+                    <h4 class="whiteText secIndent">Area of Work</h4>
+                    <ul class="footerUL">
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li id="noUnderline"><a href="#">Chemical Engineering Investigation</a></li>
                     </ul>
+                </div>
                 </article>
-                <article>
-                    <h4>About FDG Forensics</h4>
-                    <ul>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
+                <article id="aboutFDG" class="footerArticle">
+                <div>
+                    <h4 class="whiteText secIndent">About FDG Forensics</h4>
+                    <ul class="footerUL">
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
                     </ul>
-                    <h4>People</h4>
-                    <ul>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
+                    <h4 id="people" class="whiteText secIndent">People</h4>
+                    <ul class="footerUL">
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
                     </ul>
+                </div>
                 </article>
-                <article>
-                    <h4>Offices</h4>
-                    <ul>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
-                        <li>Chemical Engineering Investigation</li>
+                <article id="offices" class="footerArticle">
+                <div>
+                    <h4 class="whiteText secIndent">Offices</h4>
+                    <ul class="footerUL">
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
                     </ul>
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>Chemical Engineering Investigation</li>
+                    <h4 id="contactUs" class="whiteText secIndent">Contact Us</h4>
+                    <ul class="footerUL">
+                        <li><a href="#">Chemical Engineering Investigation</a></li>
                     </ul>
+                </div>
                 </article>
             </div>
             
         </div>
         
         <div>
-            <span>&copy; 2014 FDG Forensics &amp; Partners LLP</span>
+            <span class="whiteText">&copy; 2014 FDG Forensics &amp; Partners LLP</span>
         </div> 
 
     </footer>
     <!-- FOOTER Ends ================================================ -->
 
+        <!-- LINKING MAIN AND  EXTERNAL SCRIPTS =========================== -->
+        
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous">
+        </script>
+
+        <script src="js/myScript.js"></script>
+        
+        
+        <!-- LINKING MAIN AND  EXTERNAL SCRIPTS ENDS ===================== -->
+        
 
     </body>
 </html>
