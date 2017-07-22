@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <!-- TELLS MOBILE PHONES NOT TO LIE ABOUT THEIR TRUE WIDTH -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- Font -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- CSS RESET NORMALIZE -->
     <link href="css/Normalizer.css" rel="stylesheet" type="text/css">
     <!-- MY OWN CSS -->
@@ -24,13 +26,21 @@
         </div>
 
         <div class="searchC">
-            <div class="searchHintC">
-                <label for="searchIt">
-                    <span>Site:<br />People:</span>
-                </label>
-            </div>
             <form class="searchFormC">
-                <input type="search" name="searchIt" id="searchIt" class="inputText" />
+                <table class="contactTab"><tr>
+                    <td class="alignRight">
+                        <div class="searchHintC">
+                            <label for="searchIt">
+                                Site:<br />People:
+                            </label>
+                        </div>
+                    </td>
+                    <td class="noRightPadding">
+                        <!--<input type="search" name="searchIt" id="searchIt" class="inputText" /> -->                       
+                        <input type="text" name="searchIt" id="searchIt" class="inputText" />                        
+                    </td>
+                    <td class="noLeftPadding"><button class="grayText"><i class="fa fa-search" aria-hidden="true"></i></button></td>
+                </tr></table>
             </form>
         </div>
 
@@ -56,7 +66,7 @@
                 </nav>
             </div>
             <!-- End of Navigation ================================== -->
-            <div class="slogan">WE ARE FORENSIC INVESTIGATORS</div>
+            <div class="slogan"><span class="sloganBack">WE ARE FORENSIC INVESTIGATORS</span></div>
             <div class="sloganLineC"></div>
         </div>
         
@@ -105,23 +115,40 @@
                     QUICK CONTACT
                 </h3>
                 <div>
-                    <div>
-                        <span class="contact">CALL US TODAY ON:</span><br />
-                        <a href="tel:02084883444"> 0208 488 3444</a>
-                        <i>img for phone</i>
-                    </div>
-                    <div class="address">
-                        <span class="contact">OR EMAIL US AT:</span><br />
-                        <a href="mailto:POSTMASTER@FDGFORENSIC.COM"><span class="myEmail"> POSTMASTER@FDGFORENSIC.COM</span></a>
-                        <i>img for email</i>
-                    </div>
-                    <div class="address">
-                        <span class="contact">URGENT INSTRUCTION SHOULD <br />BE GIVEN BY TELEPHONE:</span>
-                        <i>img for MSG</i>
-                    </div>
-                    <div class="address">
-                        <span class="contact"><address>LONDON OFFICE<br />2nd Floor<br />St. Clare House<br>30-33 Minories<br />London EC3N 1DD</address></span>
-                    </div>
+                    <table class="contactTab">
+                        <tr>
+                            <td class="contactTdLeft">
+                                <span class="contact">CALL US TODAY ON:</span><br />
+                                <a href="tel:02084883444"><span class="myEmail contactLinkTextColor"> 0208 488 3444</span></a>
+                            </td>
+                            <td class="contactTdRight">
+                                &nbsp;<a href="tel:02084883444"><i class="fa fa-3x fa-mobile-phone" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="address">
+                            <td class="contactTdLeft">
+                                <span class="contact">OR EMAIL US AT:</span><br />
+                                <a href="mailto:POSTMASTER@FDGFORENSIC.COM"><span class="myEmail contactLinkTextColor"> POSTMASTER@FDGFORENSIC.COM</span></a>
+                            </td>
+                            <td class="contactTdRight contactLinkTextColor">
+                                <a href="mailto:POSTMASTER@FDGFORENSIC.COM"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="address">
+                            <td class="contactTdLeft">
+                                <span class="contact">URGENT INSTRUCTION SHOULD <br />BE GIVEN BY TELEPHONE</span>
+                            </td>
+                            <td class="contactTdRight">
+                                <a href="#"><i class="fa fa-2x  fa-comment-o pseudoA" aria-hidden="true"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="address">
+                            <td class="contactTdLeft">
+                                <span class="contact"><address>LONDON OFFICE<br />2nd Floor<br />St. Clare House<br>30-33 Minories<br />London EC3N 1DD</address></span>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
                 </div>
             </article>
         </div>
@@ -146,11 +173,11 @@
             <aside class="introAside">
                 <div>
                     <h3 class="rotH3">SOCIAL MEDIA</h3>
-                    <div>
-                        <a href="#"><i>Linkedin</i></a><br />
-                        <a href="#"><i>AppleStore</i></a><br />
-                        <a href="#"><i>GooglePlay</i></a><br />
-                        <a href="#"><i>BlackBerry</i></a>
+                    <div class="linkDiv">
+                        <a href="#"><img class="linkImg" src="img/linkedin.png" alt="Linkedin"></a><br />
+                        <a href="#"><img class="linkImg" src="img/apple.png" alt="Apple Store"></a><br />
+                        <a href="#"><img class="linkImg" src="img/googleplay.png" alt="Google Play"></a><br />
+                        <a href="#"><img class="linkImg" src="img/Blackberry.png" alt="Blackberry"></a>
                     </div>
                 </div>
             </aside>

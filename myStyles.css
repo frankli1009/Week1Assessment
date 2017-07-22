@@ -92,13 +92,11 @@ body {
 }
 
 .searchC {
-    top: 10px;
+    top: 0;
     left: 70vw;
     position: fixed;
     z-index: 90;
     width:200px;
-    column-count: 2;
-    column-gap: 0;
     display: none;
 }
 
@@ -108,6 +106,23 @@ body {
     font-size: 0.7em;
     margin: 5px;
     padding: 0;
+}
+
+td.alignRight {
+    text-align: right;
+    padding-right: 10px;
+}
+
+td.noRightPadding {
+    padding-right: 0;
+}
+
+td.noLeftPadding {
+    padding-left: 0;
+}
+
+button.grayText {
+    color: rgba(128, 128, 128, 1);
 }
 
 .searchFormC {
@@ -169,15 +184,21 @@ body {
     position: static;
     width: 100%;
     z-index: 80;
-    padding: 150px 4vw 0 0;
+    padding: 120px 0 0 0;
 
     background-image: url(../img/background.jpg); 
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: center center;
     background-size: cover;
     background-color: rgba(13, 59, 82, 1);
     border-bottom: 15px solid rgba(53, 38, 80, 0.8);   
  }
+
+span.sloganBack {
+    padding: 20px 20px 35px 20px;
+/*    margin-top: 120px;*/
+    background-color: rgba(13, 59, 82, 0.7);
+}
 
 
 .navDivC {
@@ -246,6 +267,7 @@ nav a:hover {
     height: auto;
     text-align: center;
     opacity: 1;
+    overflow: hidden;
 }
 
 .detailA {
@@ -273,8 +295,44 @@ div.more {
     color: rgba(13, 59, 82, 1);
 }
 
+table.contactTab {
+    width: 100%;
+    border-spacing: 0;
+/*    text-align: center;*/
+} 
+
+td.contactTdLeft {
+    text-align: right;
+    width: 70%;
+}
+
+td.contactTdRight {
+    text-align: left;
+    width: 30%;
+}
+
+span.contactLinkTextColor {
+    color: rgba(79, 161, 231, 1);
+}
+
+td.contactTdLeft a {
+    text-decoration: none;
+}
+
 div.address {
     margin-top: 10px;
+}
+
+address {
+    font-style: normal;
+}
+
+.contactTdRight a i {
+    color: rgba(13, 59, 82, 1);
+}
+
+.pseudoA {
+    cursor: default;
 }
 
 .myEmail {
@@ -320,8 +378,20 @@ aside h3 {
 }
 
 .introAside {
-    width: 30%;
+    width: 33%;
     float: left;
+}
+
+div.linkDiv {
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    
+}
+
+.linkImg {
+    width: 100px;
+    height: 32px;
 }
 
 .footer {
@@ -413,10 +483,23 @@ h1:before {
         position: static;
         width: 100%;
     }
+    span.sloganBack {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 
 
+
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 376 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+@media screen and (min-width: 356px) {
+    span.sloganBack {
+        padding: 20px 20px 20px 20px;
+    }
+}
 
 
 
@@ -449,10 +532,35 @@ h1:before {
         z-index: 80;
         width: 70%
     }
+    span.sloganBack {
+        padding: 20px 75px 20px 20px;
+    }
 
 }
 
 
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 850 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 850px) {
+    span.sloganBack {
+        padding: 20px 50px 20px 20px;
+    }
+}
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 960 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 960px) {
+    span.sloganBack {
+        padding: 20px 20px 20px 20px;
+    }
+}
 
 
 /*---------------------------------------------------------------------
